@@ -1,10 +1,13 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+  padding: 2rem;
+  padding-top: 70px;
 
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -17,7 +20,30 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.producto {
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
 
+.producto-imagen {
+  max-width: 150px;
+  height: auto;
+}
+
+.producto-detalles {
+  text-align: center;
+}
+
+#contenedor-productos {
+
+  margin-left: 20px;
+  margin-top: 20px; 
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+} 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -40,3 +66,4 @@
 .read-the-docs {
   color: #888;
 }
+
